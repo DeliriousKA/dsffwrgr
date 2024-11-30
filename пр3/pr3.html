@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практичне заняття №3 - Кнопка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .my-button {
+            background-color: #007bff; /* Синій фон */
+            color: white; /* Білий текст */
+            font-size: 16px; /* Розмір шрифту */
+            padding: 10px 20px; /* Внутрішні відступи */
+            border: 2px solid #0056b3; /* Темніший бордер */
+            border-radius: 8px; /* Закруглені кути */
+            cursor: pointer;
+            transition: all 0.3s ease; /* Плавний ефект при наведенні */
+        }
+
+        .my-button:hover {
+            background-color: #0056b3; /* Темніший фон */
+            color: #eaeaea; /* Світліший текст */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
+            transform: scale(1.05); /* Збільшення при наведенні */
+        }
+
+        .my-button:active {
+            background-color: #003f7f; /* Ще темніший фон */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Менша тінь */
+            transform: scale(0.95); /* Легке зменшення при натисканні */
+        }
+    </style>
+</head>
+<body>
+    <h1>Практичне заняття №3</h1>
+    <p>Це кнопка, створена за допомогою HTML і CSS.</p>
+
+  
+    <button class="my-button" onclick="location.href='https://example.com';">
+        Натисни мене
+    </button>
+</body>
+</html>
