@@ -80,12 +80,6 @@
 <body>
 <header>
     <h1>Реєстрація</h1>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Головна</a></li>
-        
-        </ul>
-    </nav>
 </header>
 
 <main>
