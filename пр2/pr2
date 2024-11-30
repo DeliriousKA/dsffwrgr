@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстраційна форма</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+        }
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Реєстрація</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Головна</a></li>
+        
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Зареєструйтесь прямо зараз</h2>
+    <form action="https://webhook.site/bea39ce8-4574-45e4-a401-12a843f1ddbf" method="POST">
+        
+        <label for="full-name">Повне ім'я:</label>
+        <input type="text" id="full-name" name="full_name" placeholder="Ваше ім'я та прізвище" required>
+
+        
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+       
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введіть пароль" required>
+
+       
+        <label for="birthdate">Дата народження:</label>
+        <input type="date" id="birthdate" name="birthdate">
+
+      
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+            <option value="">Оберіть...</option>
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+            <option value="other">Інша</option>
+        </select>
+
+        
+        <input type="submit" value="Реєстрація">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2024 Дмитро Кривуля</p>
+    <p><a href="../index.html">Повернутися на головну</a></p>
+</footer>
+</body>
+</html>
